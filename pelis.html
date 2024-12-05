@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Plataforma de Streaming</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1> Plataforma de Streaming Equipo capa 8</h1>
+        <nav>
+            <a href="#peliculas">Películas</a>
+            
+        </nav>
+    </header>
+
+    <section id="peliculas">
+        <h2>Películas Disponibles</h2>
+        <div class="galeria">
+            <div class="pelicula" onclick="reproducirVideo('Batman Inicia.mp4')">
+                <img src="inicia.jpg" alt="Película 1">
+                <p>Película 1</p>
+            </div>
+            <div class="pelicula" onclick="reproducirVideo('pelicula2.mp4')">
+                <img src="hacker.jpg" alt="Película 2">
+                <p>Película 2</p>
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="videoPlayer">
+        <h2>Reproductor de Video</h2>
+        <video id="player" controls>
+            <source id="https://ia800804.us.archive.org/5/items/me-and-the-devil-soap-skin-letra-en-espanol-720-p-hd/me%20and%20the%20devil%20-%20soap_skin%20__%20letra%20en%20espa%C3%B1ol%28720P_HD%29.ia.mp4" type="video/mp4">
+            Tu navegador no soporta este formato de video.
+        </video>
+   
+
+    <script src="scripts.js"></script>
+</body>
+</html>
